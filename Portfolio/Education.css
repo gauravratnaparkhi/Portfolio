@@ -1,0 +1,406 @@
+/* Apply some general styles to improve layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.body_section {
+  padding: 3% 5% 1%;
+  background: linear-gradient(135deg, #f9f9f9, #f5f5f5);
+}
+
+/* Style the header */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Style the competitive_icon list */
+ul.competitive_icon {
+  list-style: none;
+  padding: 0;
+}
+
+.project-box {
+  text-decoration: none; /* Remove underline for project boxes */
+}
+
+/* Style the images in the list */
+ul.competitive_icon li img {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Customize the image sizes for each platform */
+li.codechef img {
+  width: 6vw;
+  height: 5vh;
+}
+
+li.gfg img {
+  width: 3vw;
+  height: 5vh;
+}
+
+li.leetcode img {
+  width: 3vw;
+  height: 5vh;
+}
+
+ul.competitive_icon li img:hover {
+  transform: scale(1.1);
+}
+
+/* Style the two columns */
+.col-lg-6 {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Add some spacing between the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Style the container for certificates */
+.container {
+  padding: 20px;
+}
+
+/* Style the card layout */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.certificate-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lovely Home";
+  src: local("Lovely Home"), url("Image/LovelyHome-9aBZ.ttf") format("truetype");
+}
+
+.brand-name,
+.navbar-light .navbar-brand {
+  /* font-family: "Brush Script MT"; */
+  /* margin-bottom: 3px; */
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  color: #e01c1c;
+}
+@media only screen and (max-width: 764px) {
+  .brand-name,
+  .navbar-light .navbar-brand {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    color: #e01c1c;
+  }
+}
+
+.headerachor {
+  color: black;
+  margin: 0 7px 0 7px;
+  font-size: 25px;
+}
+
+.headerachor:hover {
+  background-color: #eba7cf;
+  border-radius: 10%;
+  transition: 1.2s;
+}
+
+#Section1 {
+  padding: 7% 0 3%;
+}
+
+.Programming {
+  width: 100%;
+  height: 100%;
+}
+
+.Coding {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.competitive_icon li {
+  margin: 0 2% 0;
+  list-style: none;
+  display: inline;
+}
+
+.fab {
+  color: #2ec866;
+}
+.fab:hover {
+  color: black;
+}
+
+.iconify {
+  color: gray;
+  margin-bottom: 40px;
+}
+.iconify:hover {
+  color: black;
+}
+
+.Heading {
+  text-align: center;
+}
+
+.timeline {
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline:before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: calc(100% - 150px);
+  background: #6f67ff;
+  left: 14px;
+  top: 5px;
+  border-radius: 4px;
+}
+
+.timeline-month {
+  color: black;
+  position: relative;
+  padding: 4px 15px 4px 35px;
+  background-color: #a6a1ff;
+  display: inline-block;
+  width: auto;
+  border-radius: 40px;
+  border: 1px solid #17191b;
+  border-right-color: black;
+  margin-bottom: 30px;
+}
+
+.timeline-month span {
+  position: absolute;
+  top: -1px;
+  left: calc(100% - 10px);
+  z-index: -1;
+  white-space: nowrap;
+  display: inline-block;
+  background-color: #111;
+  padding: 4px 10px 4px 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.timeline-month:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #362cff;
+  border-radius: 100%;
+  border: 1px solid #17191b;
+  left: 5px;
+}
+
+.timeline-section {
+  padding-left: 35px;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-date {
+  margin-bottom: 15px;
+  padding: 2px 15px;
+  background: #a6a1ff;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #17191b;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.timeline-section:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #362cff;
+  top: 12px;
+  left: 20px;
+}
+
+.timeline-section:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #362cff;
+  top: 7px;
+  left: 11px;
+  border: 1px solid #17191b;
+  border-radius: 100%;
+}
+
+.timeline-box {
+  position: relative;
+  color: black;
+  background-color: #a6a1ff;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid #17191b;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.box-icon {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+}
+
+.box-title {
+  padding: 10px 15px;
+  font-size: 25px;
+  border-bottom: 1px solid #17191b;
+}
+
+.degree {
+  font-size: 15px;
+}
+
+.box-title i {
+  margin-right: 5px;
+}
+
+.box-content {
+  padding: 5px 15px;
+  background-color: white;
+}
+
+.box-item {
+  margin-bottom: 5px;
+  color: #868e96;
+  font-weight: 400;
+}
+
+.certificate {
+  padding-top: 20px;
+}
+.certificate-text {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+footer {
+  padding-top: 2%;
+  color: #868e96;
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .col-lg-6 {
+    padding: 10px;
+  }
+
+  ul.competitive_icon li img {
+    width: 20vw;
+    height: 15vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+  }
+
+  ul.competitive_icon li img {
+    width: 15vw;
+    height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .card-img-top {
+    height: 10vh;
+  }
+
+  .certificate-text {
+    font-size: 14px;
+  }
+}
